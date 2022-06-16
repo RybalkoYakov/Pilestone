@@ -1,0 +1,41 @@
+@import "mixins";
+
+.test_page {
+  display: flex;
+  justify-content: space-around;
+  padding: 8em 1em 5em 1em;
+
+  div {
+    width: 380px;
+
+    a {
+      @include button_default;
+
+      &:hover {
+        @include button_default__hover;
+      }
+    }
+
+    p {
+      span {
+        font-weight: 600;
+        font-size: 1.4em;
+      }
+    }
+
+    img {
+      width: 380px;
+    }
+  }
+}
+
+@media all and(max-width: 900px){
+  .test_page {
+    flex-direction: column;
+    align-items: center;
+
+    div:nth-child(1) {
+      padding-bottom: 2em;
+    }
+  }
+}

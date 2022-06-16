@@ -1,0 +1,28 @@
+.about_tech_page {
+  padding-top: 8em;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &__content {
+    padding: 0 1em 0 1em;
+
+    h4 {
+      font-size: 2.5em;
+      font-weight: 600;
+      padding-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    h6 {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "mixins";
+
+.page_contacts {
+
+  .contacts__map {
+    @include main_screen_padding;
+
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}

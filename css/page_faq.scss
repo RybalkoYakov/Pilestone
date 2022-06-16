@@ -1,0 +1,86 @@
+@import "mixins";
+
+.faq_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__main_screen {
+    background-image: url(../img/main_screen_bg-pack.png);
+    @include main_screen;
+
+    h1 , p {
+      text-shadow: 0 0 10px 10px rgb(255, 255, 255, .2);
+    }
+
+    h1 {
+      font-size: 6em;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      padding: 1em 1em 1em 1em;
+      
+      @media all and(max-width: 500px) {
+        font-size: 4em;
+      }
+    }
+
+    p {
+      padding: 0 1em 1em 1em;
+      color: #ffffff;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+
+  &__cards {
+    background-color: #f0f0f0;
+    padding: 5em 1em 5em 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+
+    .faq_page__card {
+      @include card_container;
+
+      h4 {
+        padding-bottom: .5em;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  &__call_to_action {
+    background: url(../img/sunglasses.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 15em 1em 15em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      font-weight: 700;
+      font-size: 3em;
+      white-space: pre-wrap;
+      text-align: center;
+      max-width: 600px;
+      color: #ffffff;
+    }
+
+    a {
+      @include button_default;
+      border: 2px solid #ffffff;
+      &:hover {
+        @include button_default__hover;
+      }
+    }
+  }
+}
+

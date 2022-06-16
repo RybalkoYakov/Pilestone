@@ -1,0 +1,258 @@
+.opticians_page__main_screen {
+  background-image: url(../img/door_inside_walljpg.png);
+  padding: 8em 1em 5em 1em;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.opticians_page__main_screen h1 {
+  text-align: center;
+}
+.opticians_page__main_screen h4 {
+  font-weight: 700;
+  text-align: center;
+}
+.opticians_page__main_screen p {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+.opticians_page__main_screen h1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+.opticians_page .uniq_product_screen {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.opticians_page .uniq_product_screen h4 {
+  text-align: center;
+  color: #024242;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 1em;
+}
+.opticians_page .uniq_product_screen p {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  max-width: 1000px;
+  padding: 1em;
+  font-size: 1.3em;
+}
+.opticians_page .partnership_screen {
+  background-color: #f0f0f0;
+  padding: 5em 1em;
+}
+.opticians_page .partnership_screen h4 {
+  text-align: center;
+  color: #024242;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-bottom: 1em;
+}
+.opticians_page .partnership_screen__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opticians_page .partnership_screen__container a {
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 70px;
+  border-radius: 35px;
+  background-color: #f0f0f0;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--main_text_color);
+  text-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.opticians_page .partnership_screen__container a:hover {
+  color: var(--main_text_color_lighter);
+  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.opticians_page .partnership_screen__container .partnership_screen__item {
+  width: 320px;
+  padding: 1em 2em;
+  position: relative;
+}
+.opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even) {
+  transform: translateX(-50%);
+  text-align: right;
+}
+@media all and (min-width: 591px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even):before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #20c766;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    right: -14px;
+    top: 8%;
+  }
+}
+@media all and (max-width: 590px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even):before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #20c766;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    left: -12px;
+    top: 8%;
+  }
+}
+@media all and (min-width: 591px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even):after {
+    z-index: -999;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -2px;
+    background-color: #b8b8ab;
+    border: 1px solid #b8b8ab;
+    height: 100%;
+  }
+}
+@media all and (max-width: 590px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even):after {
+    z-index: -999;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #b8b8ab;
+    border: 1px solid #b8b8ab;
+    height: 100%;
+  }
+}
+@media all and (max-width: 590px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(even) {
+    transform: translateX(50%);
+    text-align: left;
+  }
+}
+.opticians_page .partnership_screen__container .partnership_screen__item:nth-child(odd) {
+  transform: translateX(50%);
+}
+.opticians_page .partnership_screen__container .partnership_screen__item:nth-child(odd):before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #20c766;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  left: -12px;
+  top: 8%;
+}
+.opticians_page .partnership_screen__container .partnership_screen__item:nth-child(1):after {
+  z-index: -999;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #b8b8ab;
+  border: 1px solid #b8b8ab;
+  height: 100%;
+}
+@media all and (max-width: 590px) {
+  .opticians_page .partnership_screen__container .partnership_screen__item:nth-child(n) {
+    transform: translateX(0);
+  }
+}
+.opticians_page .partnership_screen__container .partnership_screen__item h6 {
+  font-size: 1.5em;
+}
+.opticians_page .partnership_screen__container .partnership_screen__item p {
+  font-size: 1.1em;
+}
+.opticians_page .partners_screen {
+  padding: 5em 1em 5em 1em;
+}
+.opticians_page .partners_screen h4 {
+  text-align: center;
+  color: #024242;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+}
+.opticians_page .partners_screen .partners_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  grid-gap: 20px;
+}
+.opticians_page .partners_screen .partners_cards .partners_card {
+  padding: 1em 1em 1em 2em;
+  margin: 1em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 7px 4px rgba(0, 0, 0, 0.3), inset 0 0 4px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  height: 250px;
+}
+.opticians_page .partners_screen .partners_cards .partners_card:hover {
+  box-shadow: 7px 7px 9px 6px rgba(0, 0, 0, 0.4), inset 0 0 4px 2px rgba(0, 0, 0, 0.3);
+  background-color: var(--card_color);
+}
+.opticians_page .partners_screen .partners_cards .partners_card__header {
+  font-size: 1.5em;
+}
+.opticians_page .partners_screen .partners_cards .partners_card a {
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 70px;
+  border-radius: 35px;
+  background-color: #f0f0f0;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--main_text_color);
+  text-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+}
+.opticians_page .partners_screen .partners_cards .partners_card a:hover {
+  color: var(--main_text_color_lighter);
+  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=page_for_opticians.css.map */
